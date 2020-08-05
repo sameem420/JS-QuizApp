@@ -2,9 +2,10 @@ var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results');
 var submitButton = document.getElementById('submit');
 
+var score = 0;
 
 
-const myQuestions = [
+const questions = [
     {
       question: "Who invented JavaScript?",
       answers: {
