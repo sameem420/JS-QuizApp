@@ -1,6 +1,8 @@
 var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results');
-var submitButton = document.getElementById('submit');
+
+var previousBtn = document.getElementById('previous');
+var nextBtn = document.getElementById('next');
 
 var getQuestion = document.getElementById("question");
 var op1 = document.getElementById("option1");
