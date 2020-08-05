@@ -51,3 +51,12 @@ const questions = [
     op2.innerHTML = questions[i].answers.b;
     op3.innerHTML = questions[i].answers.c;
   }
+
+
+  function PreviousQuestion() {
+    console.log("Previous Question");
+  }
+
+  function NextQuestion() {
+    console.log("Next Question");
+  }
