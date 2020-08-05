@@ -9,11 +9,11 @@ const questions = [
     {
       question: "Who invented JavaScript?",
       answers: {
-        a: "Douglas Crockford",
+        a: "Brendan Eich",
         b: "Sheryl Sandberg",
-        c: "Brendan Eich"
+        c: "Douglas Crockford"
       },
-      correctAnswer: "c"
+      correctAnswer: "a"
     },
     {
       question: "Which one of these is a JavaScript package manager?",
@@ -29,9 +29,14 @@ const questions = [
       answers: {
         a: "Angular",
         b: "jQuery",
-        c: "RequireJS",
-        d: "ESLint"
+        c: "ESLint"
       },
       correctAnswer: "d"
     }
   ];
+
+
+  for(var i=0; i<questions.length; i++)
+  {
+
+  }
