@@ -3,9 +3,9 @@ var resultsContainer = document.getElementById('results');
 var submitButton = document.getElementById('submit');
 
 var getQuestion = document.getElementById("question");
-var option1 = document.getElementById("choice1");
-var option2 = document.getElementById("choice2");
-var option3 = document.getElementById("choice3");
+var op1 = document.getElementById("option1");
+var op2 = document.getElementById("option2");
+var op3 = document.getElementById("option3");
 
 
 var score = 0;
@@ -45,7 +45,7 @@ const questions = [
   for(var i=0; i<questions.length; i++)
   {
     getQuestion.innerHTML = questions[i].question;
-    option1.innerHTML = questions[i].answers.a;
-    option2.innerHTML = questions[i].answers.b;
-    option3.innerHTML = questions[i].answers.c;
+    op1.innerHTML = questions[i].answers.a;
+    op2.innerHTML = questions[i].answers.b;
+    op3.innerHTML = questions[i].answers.c;
   }
