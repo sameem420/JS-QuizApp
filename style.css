@@ -23,6 +23,7 @@ body {
 
 .previous {
     background-color: red;
+    font-size: 12pt;
     width: 100px;
     height: 50px;
     border: none;
@@ -31,6 +32,7 @@ body {
 
 .next {
     background-color: royalblue;
+    font-size: 12pt;
     width: 100px;
     height: 50px;
     border: none;
