@@ -21,7 +21,7 @@ body {
     padding: 10px;
 }
 
-.previous {
+#previous {
     background-color: red;
     font-size: 12pt;
     width: 100px;
@@ -30,7 +30,7 @@ body {
     color: white;
 }
 
-.next {
+#next {
     background-color: royalblue;
     font-size: 12pt;
     width: 100px;
