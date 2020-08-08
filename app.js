@@ -43,8 +43,8 @@ const questions = [
     }
   ];
 
-
-  for(var i=0; i<questions.length; i++)
+var i = 0;
+  for(i=0; i<questions.length; i++)
   {
     getQuestion.innerHTML = questions[i].question;
     op1.innerHTML = questions[i].answers.a;
@@ -57,6 +57,11 @@ const questions = [
     console.log("Previous Question");
   }
 
+
   function NextQuestion() {
-    console.log("Next Question");
+    i = 1;
+    getQuestion.innerHTML = questions[i].question;
+    op1.innerHTML = questions[i].answers.a;
+    op2.innerHTML = questions[i].answers.b;
+    op3.innerHTML = questions[i].answers.c;
   }
