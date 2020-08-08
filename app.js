@@ -43,8 +43,7 @@ const questions = [
     }
   ];
 
-var i = 0;
-  for(i=0; i<questions.length; i++)
+  for(var i=0; i<questions.length; i++)
   {
     getQuestion.innerHTML = questions[i].question;
     op1.innerHTML = questions[i].answers.a;
@@ -57,9 +56,9 @@ var i = 0;
     console.log("Previous Question");
   }
 
-
+i++;
   function NextQuestion() {
-    i = 1;
+    var i = 1;
     getQuestion.innerHTML = questions[i].question;
     op1.innerHTML = questions[i].answers.a;
     op2.innerHTML = questions[i].answers.b;
