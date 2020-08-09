@@ -2,34 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Quiz App</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JavaScript Quiz App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
-    <div id="container">
-        <div id="quiz"></div>
-        <p id="question"></p>
-        <input type="radio" name="option" value="1" />
-            <span id="option1"></span>
-        </label>
-        <label class="option">
-            <input type="radio" name="option" value="2" />
-            <span id="option2"></span>
-        </label>
-        <label class="option">
-            <input type="radio" name="option" value="3" />
-            <span id="option3"></span>
-        </label>
-
-        <hr style="margin-top: 50px">
-        <div class="controls">
-            <button id="previous" onclick="PreviousQuestion()">Previous</button>
-            <button id="next" onclick="NextQuestion()">Next</button>
+    <div class="wrapper">
+        <header>
+            <p class="title">Javascript Quiz App</p>
+        </header>
+        <div id="app">
+            <h1 class="h2">Welcome to the Football Quiz</h1>
+            <button id="start">START</button>
         </div>
-        <div id="results"></div>
     </div>
-    <script src="app.js"></script>
-
+    <script src="quiz.js"></script>
 </body>
 </html>
