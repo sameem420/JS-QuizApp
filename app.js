@@ -3,17 +3,17 @@
     var data = {
         quizContent: [
             {
-                question: "Which team was the champion of the 1994-1995 Premier League season?",
-                answer1: "Blackburn Rovers",
-                answer2: "Manchester United",
-                answer3: "Arsenal",
-                correctAnswer: 1
+                question: "Inside which HTML element do we put the JavaScript?",
+                answer1: "<js>",
+                answer2: "<script>",
+                answer3: "<javascript>",
+                correctAnswer: 2
             },
             {
-                question: "In 2001-2002 Premier League season top scorer was:",
-                answer1: "Michael Owen",
-                answer2: "Alan Shearer",
-                answer3: "Thierry Henry",
+                question: "Which HTML tag is used to define an internal style sheet?",
+                answer1: "<css>",
+                answer2: "<script>",
+                answer3: "<style>",
                 correctAnswer: 3
             },
             {
