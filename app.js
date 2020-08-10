@@ -24,17 +24,17 @@
                 correctAnswer: 2
             },
             {
-                question: "Derby County F.C. was founded in:",
-                answer1: "1884",
-                answer2: "1878",
-                answer3: "1892",
+                question: "The Bootstrap grid system is based on how many columns?",
+                answer1: "12",
+                answer2: "10",
+                answer3: "6",
                 correctAnswer: 1
             },
             {
                 question: "Which player has the most appearances for the Charlton Athletic F.C.?",
-                answer1: "Derek Hales",
-                answer2: "Sam Bartram",
-                answer3: "Nicky Weaver",
+                answer1: ".container-fluid",
+                answer2: ".container",
+                answer3: ".container-fixed",
                 correctAnswer: 2
             }
         ],
