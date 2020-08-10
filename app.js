@@ -17,11 +17,11 @@
                 correctAnswer: 3
             },
             {
-                question: "What is the name of the Southampton F.C.'s stadium?",
-                answer1: "St John's Stadium",
-                answer2: "St Peter's Stadium",
-                answer3: "St Mary's Stadium",
-                correctAnswer: 3
+                question: "Who is making the Web standards?",
+                answer1: "Google",
+                answer2: "World Wide Web Consortium",
+                answer3: "Microsoft",
+                correctAnswer: 2
             },
             {
                 question: "Derby County F.C. was founded in:",
