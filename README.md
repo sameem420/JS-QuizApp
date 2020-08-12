@@ -8,6 +8,8 @@ A small app created for the purpose of learning a JavaScript programming languag
 	- **display** object contains a methods and properties for updating the DOM
 	- **control** object handles an application logic
 	
+	
 DEMO :-
 
-https://sameem420.github.io/JS-QuizApp/	
+https://sameem420.github.io/JS-QuizApp/
+	

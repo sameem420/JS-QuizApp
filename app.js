@@ -3,38 +3,38 @@
     var data = {
         quizContent: [
             {
-                question: "Which team was the champion of the 1994-1995 Premier League season?",
-                answer1: "Blackburn Rovers",
-                answer2: "Manchester United",
-                answer3: "Arsenal",
-                correctAnswer: 1
+                question: "Inside which HTML element do we put the JavaScript?",
+                answer1: "<js>",
+                answer2: "<script>",
+                answer3: "<javascript>",
+                correctAnswer: 2
             },
             {
-                question: "In 2001-2002 Premier League season top scorer was:",
-                answer1: "Michael Owen",
-                answer2: "Alan Shearer",
-                answer3: "Thierry Henry",
+                question: "Which HTML tag is used to define an internal style sheet?",
+                answer1: "<css>",
+                answer2: "<script>",
+                answer3: "<style>",
                 correctAnswer: 3
             },
             {
-                question: "What is the name of the Southampton F.C.'s stadium?",
-                answer1: "St John's Stadium",
-                answer2: "St Peter's Stadium",
-                answer3: "St Mary's Stadium",
-                correctAnswer: 3
+                question: "Who is making the Web standards?",
+                answer1: "Google",
+                answer2: "World Wide Web Consortium",
+                answer3: "Microsoft",
+                correctAnswer: 2
             },
             {
-                question: "Derby County F.C. was founded in:",
-                answer1: "1884",
-                answer2: "1878",
-                answer3: "1892",
+                question: "The Bootstrap grid system is based on how many columns?",
+                answer1: "12",
+                answer2: "10",
+                answer3: "6",
                 correctAnswer: 1
             },
             {
                 question: "Which player has the most appearances for the Charlton Athletic F.C.?",
-                answer1: "Derek Hales",
-                answer2: "Sam Bartram",
-                answer3: "Nicky Weaver",
+                answer1: ".container-fluid",
+                answer2: ".container",
+                answer3: ".container-fixed",
                 correctAnswer: 2
             }
         ],
