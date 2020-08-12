@@ -7,3 +7,9 @@ A small app created for the purpose of learning a JavaScript programming languag
     - **data** object stores all the quiz content (questions and answers) in array of objects 
 	- **display** object contains a methods and properties for updating the DOM
 	- **control** object handles an application logic
+	
+	
+DEMO :-
+
+https://sameem420.github.io/JS-QuizApp/
+	
