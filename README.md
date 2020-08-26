@@ -4,6 +4,6 @@ A small app created for the purpose of learning a JavaScript programming languag
 ##Concept 
 - A guiding principle was to implement a separation of the application data, logic and the UI manipulation part
 - Application has 3 main objects: 
-    - **data** object stores all the quiz content (questions and answers) in array of objects 
+    - **data** object stores all the quiz content (questions and answers) in array of objects after retreiving from firebase database
 	- **display** object contains a methods and properties for updating the DOM
 	- **control** object handles an application logic
