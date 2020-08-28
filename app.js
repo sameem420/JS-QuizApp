@@ -1,3 +1,20 @@
+
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAbFistmgFQcIOojLVD7cgXmTE9mLvuqVc",
+    authDomain: "quizapp-74d37.firebaseapp.com",
+    databaseURL: "https://quizapp-74d37.firebaseio.com",
+    projectId: "quizapp-74d37",
+    storageBucket: "quizapp-74d37.appspot.com",
+    messagingSenderId: "10113678267",
+    appId: "1:10113678267:web:d2aa73777b379fb241629e",
+    measurementId: "G-PEKPZ347TY"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+
 (function(){
 
     var data = {
