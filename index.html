@@ -8,8 +8,13 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="quiz.css">
 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+
 </head>
 <body>
+    <button id="insert" onclick="saveData()">INSERT</button>
     <div class="wrapper">
         <header>
             <p class="title">Quiz App</p>
@@ -19,13 +24,6 @@
             <button id="start">START</button>
         </div>
     </div>
-    <script src="quiz.js"></script>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
-
+    <script src="app.js"></script>
 </body>
 </html>

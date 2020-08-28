@@ -15,13 +15,21 @@
   firebase.analytics();
 
 
-  var quizData = database.firebase().ref("quizapp-74d37").set(
-      {
-          "question": data.quizContent[control.count].question
-      }
-  );
+  // Sending data to the firebase database
+  function saveData() {
+    var questionContent = {
+        "question" : "Which team was the champion of the 1994-1995 Premier League season?",
+        "answer1" : "Blackburn Rovers",
+        "answer2" : "Manchester United",
+        "answer3" : "Arsenal",
+        "correctAnswer" : 1
+    }
 
+    console.log(questionContent);
+    firebase.database().ref("QuizData").set(questionContent);   
+}
 
+      
 (function(){
 
     var data = {
