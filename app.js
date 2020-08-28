@@ -15,6 +15,13 @@
   firebase.analytics();
 
 
+  var quizData = database.firebase().ref("quizapp-74d37").set(
+      {
+          "question": data.quizContent[control.count].question
+      }
+  );
+
+
 (function(){
 
     var data = {
