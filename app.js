@@ -12,24 +12,36 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
 
 
   // Sending data to the firebase database
   function saveData() {
     var questionContent = {
-        "question" : "Which team was the champion of the 1994-1995 Premier League season?",
-        "answer1" : "Blackburn Rovers",
-        "answer2" : "Manchester United",
-        "answer3" : "Arsenal",
-        "correctAnswer" : 1
+        question: "Which team was the champion of the 1994-1995 Premier League season?",
+                answer1: "Blackburn Rovers",
+                answer2: "Manchester United",
+                answer3: "Arsenal",
+                correctAnswer: 1
     }
 
     console.log(questionContent);
-    firebase.database().ref("QuizData").set(questionContent);   
+    var questionID = 2;
+    firebase.database().ref('QuizData/' + questionID).set(questionContent);   
 }
 
-      
+function getData() {
+    var questionContent = {
+        "question": "In 2001-2002 Premier League season top scorer was:",
+        "answer1": "Michael Owen",
+        "answer2": "Alan Shearer",
+        "answer3": "Thierry Henry",
+        "correctAnswer": 3
+    }
+
+    console.log(questionContent);
+    firebase.database().ref("QuizData").get(questionContent);   
+}
+
 (function(){
 
     var data = {
