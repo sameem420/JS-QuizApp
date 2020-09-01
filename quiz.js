@@ -1,3 +1,48 @@
+@@ -1,237 +0,0 @@
+
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAbFistmgFQcIOojLVD7cgXmTE9mLvuqVc",
+    authDomain: "quizapp-74d37.firebaseapp.com",
+    databaseURL: "https://quizapp-74d37.firebaseio.com",
+    projectId: "quizapp-74d37",
+    storageBucket: "quizapp-74d37.appspot.com",
+    messagingSenderId: "10113678267",
+    appId: "1:10113678267:web:d2aa73777b379fb241629e",
+    measurementId: "G-PEKPZ347TY"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+
+  // Sending data to the firebase database
+  function saveData() {
+    var questionContent = {
+        question: "Which team was the champion of the 1994-1995 Premier League season?",
+                answer1: "Blackburn Rovers",
+                answer2: "Manchester United",
+                answer3: "Arsenal",
+                correctAnswer: 1
+    }
+
+    console.log(questionContent);
+    var questionID = 2;
+    firebase.database().ref('QuizData/' + questionID).set(questionContent);   
+}
+
+function getData() {
+    var questionContent = {
+        "question": "In 2001-2002 Premier League season top scorer was:",
+        "answer1": "Michael Owen",
+        "answer2": "Alan Shearer",
+        "answer3": "Thierry Henry",
+        "correctAnswer": 3
+    }
+
+    console.log(questionContent);
+    firebase.database().ref("QuizData").get(questionContent);   
+}
+
 (function(){
 
     var data = {
