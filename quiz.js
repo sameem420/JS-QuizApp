@@ -13,23 +13,6 @@
   firebase.initializeApp(firebaseConfig);
   var database = firebase.database();
 
-  // Sending data to the firebase database
-  function saveData() {
-    // var questionContent = {
-        
-    // }
-
-    // console.log(questionContent);
-    var questionID = 4;
-    database.ref('QuizData/' + questionID).set({
-        question: "Which function of an Array object calls a function for each element in the array?",
-        answer1: "forEach()",
-        answer2: "forEvery()",
-        answer3: "each()",
-        correctAnswer: 3
-    });   
-}
-
 function getData() {
     var quizQuestions = firebase.database().ref("QuizData");
     console.log(quizQuestions);   
