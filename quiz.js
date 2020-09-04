@@ -11,31 +11,28 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-
+  var database = firebase.database();
 
   // Sending data to the firebase database
   function saveData() {
     // var questionContent = {
-    //     question: "Which team was the champion of the 1994-1995 Premier League season?",
-    //             answer1: "Blackburn Rovers",
-    //             answer2: "Manchester United",
-    //             answer3: "Arsenal",
-    //             correctAnswer: 1
+        
     // }
 
     // console.log(questionContent);
-    var questionID = 1;
-    firebase.database().ref('QuizData/' + questionID).set({
-        question: "What is the HTML tag under which one can write the JavaScript code?",
-        answer1: "<javascript>",
-        answer2: "<scripted>",
-        answer3: "<script>",
+    var questionID = 4;
+    database.ref('QuizData/' + questionID).set({
+        question: "Which function of an Array object calls a function for each element in the array?",
+        answer1: "forEach()",
+        answer2: "forEvery()",
+        answer3: "each()",
         correctAnswer: 3
     });   
 }
 
 function getData() {
-    var quizQuestions = firebase.database().ref("QuizData").val();   
+    var quizQuestions = firebase.database().ref("QuizData");
+    console.log(quizQuestions);   
 }
 
 (function(){
