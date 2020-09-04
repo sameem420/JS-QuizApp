@@ -15,59 +15,20 @@
 
 function getData() {
     database.ref('QuizData').on('value',function(questions){
-        //console.log(questions.val());
         var quizQuestions = questions.val();
-        console.log(quizQuestions[1].question);
-        console.log(quizQuestions[1].answer1);
-        console.log(quizQuestions[1].answer2);
-        console.log(quizQuestions[1].answer3);
-        console.log(quizQuestions[1].correctAnswer);
+        return quizQuestions;
       });
 }
 
 (function(){
-
-    var data = {
-        quizContent: [
-            {
-                question: "Which team was the champion of the 1994-1995 Premier League season?",
-                answer1: "Blackburn Rovers",
-                answer2: "Manchester United",
-                answer3: "Arsenal",
-                correctAnswer: 1
-            },
-            {
-                question: "In 2001-2002 Premier League season top scorer was:",
-                answer1: "Michael Owen",
-                answer2: "Alan Shearer",
-                answer3: "Thierry Henry",
-                correctAnswer: 3
-            },
-            {
-                question: "What is the name of the Southampton F.C.'s stadium?",
-                answer1: "St John's Stadium",
-                answer2: "St Peter's Stadium",
-                answer3: "St Mary's Stadium",
-                correctAnswer: 3
-            },
-            {
-                question: "Derby County F.C. was founded in:",
-                answer1: "1884",
-                answer2: "1878",
-                answer3: "1892",
-                correctAnswer: 1
-            },
-            {
-                question: "Which player has the most appearances for the Charlton Athletic F.C.?",
-                answer1: "Derek Hales",
-                answer2: "Sam Bartram",
-                answer3: "Nicky Weaver",
-                correctAnswer: 2
-            }
-        ],
-        points: 0
-    };
     
+    var quizQuestions = getData();
+    getQuestion.innerHTML = quizQuestions[1].question;
+    getAnswer1.innerHTML = quizQuestions[1].answer1;
+    getAnswer2.innerHTML = quizQuestions[1].answer2;
+    getAnswer3.innerHTML = quizQuestions[1].answer3;
+    //quizQuestions[1].correctAnswer;
+
     var display = {
         getApp: document.getElementById('app'),
 
@@ -81,7 +42,8 @@ function getData() {
 
             this.getApp.innerHTML = newEl;
         },
-
+        
+        
         // Updates DOM with each question
         updateMainPage: function() {
             var getQuestNumber = document.getElementById('questNumber'),
@@ -93,10 +55,7 @@ function getData() {
                 sumOfQuestions = data.quizContent.length;
                 
             getQuestNumber.innerHTML = control.count + 1 + '/' + sumOfQuestions;
-            getQuestion.innerHTML = data.quizContent[control.count].question;
-            getAnswer1.innerHTML = data.quizContent[control.count].answer1;
-            getAnswer2.innerHTML = data.quizContent[control.count].answer2;
-            getAnswer3.innerHTML = data.quizContent[control.count].answer3;
+            
             getCurrentPoints.innerHTML = 'Points:' + ' ' + data.points;
             this.newElement('button', 'submit', 'Submit Answer');
         },
