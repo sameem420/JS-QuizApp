@@ -14,8 +14,15 @@
   var database = firebase.database();
 
 function getData() {
-    var quizQuestions = firebase.database().ref("QuizData");
-    console.log(quizQuestions);   
+    database.ref('QuizData').on('value',function(questions){
+        //console.log(questions.val());
+        var quizQuestions = questions.val();
+        console.log(quizQuestions[1].question);
+        console.log(quizQuestions[1].answer1);
+        console.log(quizQuestions[1].answer2);
+        console.log(quizQuestions[1].answer3);
+        console.log(quizQuestions[1].correctAnswer);
+      });
 }
 
 (function(){
