@@ -21,16 +21,16 @@
 
 
   var quizQuestions;
+  var questionId = 1;
 // getting quiz data from Firebase
 database.ref('QuizData').on('value',function(questions){
     quizQuestions = questions.val();
-    getQuestion.innerHTML = quizQuestions[1].question;
-    getAnswer1.innerText = quizQuestions[1].answer1;
-    getAnswer2.innerText = quizQuestions[1].answer2;
-    getAnswer3.innerText = quizQuestions[1].answer3;
+    getQuestion.innerHTML = quizQuestions[questionId].question;
+    getAnswer1.innerText = quizQuestions[questionId].answer1;
+    getAnswer2.innerText = quizQuestions[questionId].answer2;
+    getAnswer3.innerText = quizQuestions[questionId].answer3;
 });
 
-console.log(quizQuestions);
 
 
 
