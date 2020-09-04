@@ -22,6 +22,11 @@
 
   var quizQuestions;
   var questionId = 1;
+
+  function nextQuestion() {
+    questionId += 1;
+    console.log(questionId)
+  }
 // getting quiz data from Firebase
 database.ref('QuizData').on('value',function(questions){
     quizQuestions = questions.val();
@@ -30,8 +35,6 @@ database.ref('QuizData').on('value',function(questions){
     getAnswer2.innerText = quizQuestions[questionId].answer2;
     getAnswer3.innerText = quizQuestions[questionId].answer3;
 });
-
-
 
 
 
