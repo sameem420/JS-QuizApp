@@ -1,6 +1,4 @@
-@@ -1,237 +0,0 @@
-
-  // Your web app's Firebase configuration
+// Web app's Firebase configuration
   var firebaseConfig = {
     apiKey: "AIzaSyAbFistmgFQcIOojLVD7cgXmTE9mLvuqVc",
     authDomain: "quizapp-74d37.firebaseapp.com",
