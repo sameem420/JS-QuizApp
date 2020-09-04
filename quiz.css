@@ -15,6 +15,9 @@ body {
     background: #F0F1F3;
 }
 
+#app {
+    text-align: center;
+}
 .wrapper {
     box-sizing: border-box;
     width: 95%;
@@ -115,9 +118,9 @@ button:active {
 
 /* Custom Radio Input */
 
-input[type="radio"] {
+/* input[type="radio"] {
     display: none;
-}
+} */
 
 label:hover .inner {
     -webkit-transform: scale(0.5);
