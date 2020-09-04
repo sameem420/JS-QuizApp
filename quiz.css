@@ -54,6 +54,7 @@ header {
 
 .title {
     margin: 0;
+    color: #43548A;
 }
 
 .quest-number {
@@ -61,7 +62,7 @@ header {
     color: #B6BCCC;
 }
 
-.h2, .h3 {
+h1, .h3 {
     color: #43548A;
 }
 
