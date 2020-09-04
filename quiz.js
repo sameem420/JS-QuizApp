@@ -21,11 +21,18 @@ function getData() {
 }
 
 (function(){
-    
+    // getting quiz data from Firebase
     var quizQuestions = getData();
+
+    var getQuestion = document.getElementById("question");
+    var getAnswer1 = document.getElementById("answer1");
+    var getAnswer2 = document.getElementById("answer2");
+    var getAnswer3 = document.getElementById("answer3");
+
     getQuestion.innerHTML = quizQuestions[1].question;
     getAnswer1.innerHTML = quizQuestions[1].answer1;
     getAnswer2.innerHTML = quizQuestions[1].answer2;
     getAnswer3.innerHTML = quizQuestions[1].answer3;
+    
     //quizQuestions[1].correctAnswer;
 });
