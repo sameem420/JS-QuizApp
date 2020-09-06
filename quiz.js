@@ -39,7 +39,7 @@ database.ref('QuizData').on('value',function(questions){
 
 let getQuest = () => {
   for (question in quizQuestions) {
-    console.log(quizQuestions[question])
+    console.log(quizQuestions[question].question)
   }
 }
 
