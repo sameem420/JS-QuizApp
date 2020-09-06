@@ -25,7 +25,7 @@
 
   function nextQuestion() {
     questionId += 1;
-    console.log(questionId)
+    return questionId
   }
 // getting quiz data from Firebase
 database.ref('QuizData').on('value',function(questions){
@@ -36,7 +36,9 @@ database.ref('QuizData').on('value',function(questions){
     getAnswer3.innerText = quizQuestions[questionId].answer3;
 });
 
-
+for var question in quizQuestions {
+  console.log(question)
+}
 
 
 //quizQuestions[1].correctAnswer;
