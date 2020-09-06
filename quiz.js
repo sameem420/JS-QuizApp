@@ -40,6 +40,10 @@ database.ref('QuizData').on('value',function(questions){
 let getQuest = () => {
   for (question in quizQuestions) {
     console.log(quizQuestions[question].question)
+    console.log(quizQuestions[question].answer1)
+    console.log(quizQuestions[question].answer2)
+    console.log(quizQuestions[question].answer3)
+    console.log(quizQuestions[question].correctAnswer)
   }
 }
 
