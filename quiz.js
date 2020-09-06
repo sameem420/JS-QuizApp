@@ -36,9 +36,11 @@ database.ref('QuizData').on('value',function(questions){
     getAnswer3.innerText = quizQuestions[questionId].answer3;
 });
 
-for (var question = 0; question <= quizQuestions; question++) {
-  console.log(question)
-}
 
+let getQuest = () => {
+  for (question in quizQuestions) {
+    console.log(question)
+  }
+}
 
 //quizQuestions[1].correctAnswer;
