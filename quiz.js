@@ -14,6 +14,7 @@
   var database = firebase.database();
 
 
+
   var getQuestion = document.getElementById("question");
   var getAnswer1 = document.getElementById("answer1");
   var getAnswer2 = document.getElementById("answer2");
@@ -21,30 +22,37 @@
 
 
   var quizQuestions;
-  var questionId = 1;
-
-  function nextQuestion() {
-    questionId += 1;
-    return questionId
-  }
+  var questionId = 0;
+  
 // getting quiz data from Firebase
 database.ref('QuizData').on('value',function(questions){
     quizQuestions = questions.val();
-    getQuestion.innerHTML = quizQuestions[questionId].question;
-    getAnswer1.innerText = quizQuestions[questionId].answer1;
-    getAnswer2.innerText = quizQuestions[questionId].answer2;
-    getAnswer3.innerText = quizQuestions[questionId].answer3;
 });
 
 
 let getQuest = () => {
   for (question in quizQuestions) {
-    console.log(quizQuestions[question].question)
-    console.log(quizQuestions[question].answer1)
-    console.log(quizQuestions[question].answer2)
-    console.log(quizQuestions[question].answer3)
+    getQuestion.innerHTML = quizQuestions[questionId].question;
+    getAnswer1.innerText = quizQuestions[questionId].answer1;
+    getAnswer2.innerText = quizQuestions[questionId].answer2;
+    getAnswer3.innerText = quizQuestions[questionId].answer3;
     console.log(quizQuestions[question].correctAnswer)
+    //questionId = quizQuestions[questionId];
   }
+  console.log(questionId)
 }
 
 //quizQuestions[1].correctAnswer;
+questionId = questionId + 1;
+
+function nextQuestion() {
+  for (question in quizQuestions) {
+    questionId = questionId + 1;
+    getQuestion.innerHTML = quizQuestions[questionId].question;
+    getAnswer1.innerText = quizQuestions[questionId].answer1;
+    getAnswer2.innerText = quizQuestions[questionId].answer2;
+    getAnswer3.innerText = quizQuestions[questionId].answer3;
+    console.log(quizQuestions[question].correctAnswer)
+    questionId = questionId;
+  }
+}
