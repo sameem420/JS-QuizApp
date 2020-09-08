@@ -29,6 +29,9 @@ database.ref('QuizData').on('value', function(questions){
     quizQuestions = questions.val();
 });
 
+window.onload = getQuest()
+
+
 
 let getQuest = () => {
   
@@ -37,8 +40,8 @@ let getQuest = () => {
     getAnswer2.innerText = quizQuestions[questionId].answer2;
     getAnswer3.innerText = quizQuestions[questionId].answer3;
     console.log(quizQuestions[question].correctAnswer)
-
 }
+
 
 
 //quizQuestions[1].correctAnswer;
