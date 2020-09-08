@@ -37,16 +37,13 @@ let getQuest = () => {
     getAnswer2.innerText = quizQuestions[questionId].answer2;
     getAnswer3.innerText = quizQuestions[questionId].answer3;
     console.log(quizQuestions[question].correctAnswer)
-    //questionId = quizQuestions[questionId];
   }
-  console.log(questionId)
 }
 
 //quizQuestions[1].correctAnswer;
 questionId = questionId + 1;
 
-function nextQuestion() {
-  for (question in quizQuestions) {
+let nextQuestion = () => {
     questionId = questionId + 1;
     getQuestion.innerHTML = quizQuestions[questionId].question;
     getAnswer1.innerText = quizQuestions[questionId].answer1;
@@ -54,5 +51,4 @@ function nextQuestion() {
     getAnswer3.innerText = quizQuestions[questionId].answer3;
     console.log(quizQuestions[question].correctAnswer)
     questionId = questionId;
-  }
 }
