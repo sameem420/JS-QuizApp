@@ -31,14 +31,15 @@ database.ref('QuizData').on('value', function(questions){
 
 
 let getQuest = () => {
-  for (question in quizQuestions) {
+  
     getQuestion.innerHTML = quizQuestions[questionId].question;
     getAnswer1.innerText = quizQuestions[questionId].answer1;
     getAnswer2.innerText = quizQuestions[questionId].answer2;
     getAnswer3.innerText = quizQuestions[questionId].answer3;
     console.log(quizQuestions[question].correctAnswer)
-  }
+
 }
+
 
 //quizQuestions[1].correctAnswer;
 questionId = questionId + 1;
