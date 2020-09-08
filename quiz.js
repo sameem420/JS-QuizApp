@@ -25,7 +25,7 @@
   var questionId = 0;
   
 // getting quiz data from Firebase
-database.ref('QuizData').on('value',function(questions){
+database.ref('QuizData').on('value', function(questions){
     quizQuestions = questions.val();
 });
 
@@ -42,6 +42,7 @@ let getQuest = () => {
 
 //quizQuestions[1].correctAnswer;
 questionId = questionId + 1;
+
 
 let nextQuestion = () => {
     questionId = questionId + 1;
