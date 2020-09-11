@@ -24,7 +24,7 @@
 
   var quizQuestions;
   var questionId = 0;
-  var score = 0;
+  var score = 1;
   
 // getting quiz data from Firebase
 database.ref('QuizData').on('value', function(questions){
@@ -33,13 +33,15 @@ database.ref('QuizData').on('value', function(questions){
 
 
 let getQuest = () => {
-  for (question in quizQuestions) {
+  //for (question in quizQuestions) {
     getQuestion.innerHTML = quizQuestions[questionId].question;
     getAnswer1.innerText = quizQuestions[questionId].answer1;
     getAnswer2.innerText = quizQuestions[questionId].answer2;
     getAnswer3.innerText = quizQuestions[questionId].answer3;
-    console.log(quizQuestions[question].correctAnswer)
-  }
+    getScore.innerText = score;
+    if(quizQuestions[questionId].correctAnswer)
+    {}
+  //}
 }
 
 setInterval(getQuest, 1000);
