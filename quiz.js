@@ -19,6 +19,7 @@
   var getAnswer1 = document.getElementById("answer1");
   var getAnswer2 = document.getElementById("answer2");
   var getAnswer3 = document.getElementById("answer3");
+  var getScore = document.getElementById("showScore");
 
 
   var quizQuestions;
