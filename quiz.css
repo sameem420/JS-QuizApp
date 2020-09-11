@@ -15,6 +15,10 @@ body {
     background: #F0F1F3;
 }
 
+#scoreCounter {
+    text-align: right;
+}
+
 #app {
     text-align: center;
 }
