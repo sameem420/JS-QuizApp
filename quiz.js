@@ -23,6 +23,7 @@
 
   var quizQuestions;
   var questionId = 0;
+  var score = 0;
   
 // getting quiz data from Firebase
 database.ref('QuizData').on('value', function(questions){
@@ -45,7 +46,7 @@ setInterval(getQuest, 1000);
 //quizQuestions[1].correctAnswer;
 questionId = questionId + 1;
 
-
+// showing quiz data 
 let nextQuestion = () => {
     questionId = questionId + 1;
     getQuestion.innerHTML = quizQuestions[questionId].question;
